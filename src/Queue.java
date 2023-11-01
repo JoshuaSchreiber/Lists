@@ -10,9 +10,9 @@ public class Queue {
     }
 
     public Knoten remove(){
-
+        Knoten k = knoten;
         knoten = knoten.getNext();
-        return knoten;
+        return k;
     }
 
     public Knoten getKnoten(){

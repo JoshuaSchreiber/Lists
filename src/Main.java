@@ -17,9 +17,11 @@ public class Main {
         Knoten knoten3 = new Knoten(element3);
         queue.add(knoten3);
 
-        System.out.println(queue.getKnoten().getElement().getContent());
-        System.out.println(queue.getKnoten().getNext().getElement().getContent());
         System.out.println(queue.getKnoten().getNext().getNext().getElement().getContent());
+        System.out.println(queue.getKnoten().getNext().getElement().getContent());
+        System.out.println(queue.getKnoten().getElement().getContent());
+
+        System.out.println("---");
 
         System.out.println(queue.remove().getElement().getContent());
         System.out.println(queue.remove().getElement().getContent());
