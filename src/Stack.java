@@ -4,7 +4,9 @@ public class Stack {
 
     }
 
-    public void add(Knoten k){
+    public void add(Object object){
+        Element element1 = new Element(object);
+        Knoten k = new Knoten(element1);
         k.setNext(knoten);
         knoten = k;
     }
@@ -21,6 +23,12 @@ public class Stack {
 
     public Knoten getKnoten(){
         return knoten;
+    }
+
+    public Knoten peek(){ // .peak does not function
+        Knoten k = knoten;
+        k.setNext(null);
+        return k;
     }
 
 }
